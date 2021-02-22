@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+.grid_div {
+    display: grid;
+    grid-template-areas:"header menu menu menu" "hero hero hero hero" "main main text image" "main main text extra" "banner banner banner banner";
+    grid-template-rows: 60px 1fr 150px 150px 120px ;
+    grid-template-columns: 20% 1fr 30% 20%;
+    height: 100vh;​
+    margin: 0;
+}
+.HEADER {
+    grid-area: header;
+}
+.MENU {
+    grid-area: menu;
+}
+.HERO {
+    grid-area: hero;
+}
+.MAIN {
+    grid-area: main;
+}
+.TEXT {
+    grid-area: text;
+}
+.IMAGE {
+    grid-area: image;
+}
+.EXTRA {
+    grid-area: extra;
+}
+.BANNER {
+    grid-area: banner;
+}
+
+
+.grid_div div:nth-child(1) {
+    background-color: rgb(31, 30, 30);
+}
+.grid_div div:nth-child(2) {
+    background-color: rgb(236, 72, 72);
+}
+.grid_div div:nth-child(3) {
+    background-color: rgb(59, 122, 216);
+}
+.grid_div div:nth-child(4) {
+    background-color: rgb(14, 45, 80);
+}
+.grid_div div:nth-child(5) {
+    background-color: rgb(255, 255, 255);
+}
+.grid_div div:nth-child(6) {
+    background-color: rgb(54, 99, 99);
+}
+.grid_div div:nth-child(7) {
+    background-color: rgb(8, 87, 63);
+}
+.grid_div div:nth-child(8) {
+    background-color: rgb(229, 255, 0);
+}
+.grid_div > div {
+    text-align: center;
+}
